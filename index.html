@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vijay's 4 Wheel Beast offers top-notch car modification and repair services.">
+    <meta name="keywords" content="car workshop, car modifications, auto repair, car maintenance">
+    <title>Vijay's 4 Wheel Beast - Car Workshop</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/577/PNG/256/ExecutiveCar_Black_icon-icons.com_54904.png" type="image/png">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        iframe.bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            filter: brightness(100%); /* Adjust brightness as needed */
+            object-fit: cover; /* Ensures the video covers the screen */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            animation: slideIn 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.5em;
+            animation: slideIn 1s 0.5s ease-out;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            flex: 1;
+            padding-top: 20px;
+            z-index: 1;
+        }
+
+        .section {
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+        }
+
+        .section h2 {
+            color: red;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section li {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            animation: fadeIn 1s 1.5s ease-in;
+            z-index: 1;
+        }
+
+        footer p {
+            font-size: 1.1em;
+            margin: 5px 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Service Request Form */
+        .service-request {
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .service-request h2 {
+            color: red;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .service-request form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-request label {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .service-request input, .service-request textarea {
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            background: #fff;
+            color: #000;
+        }
+
+        .service-request button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 4px;
+            background: red;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .service-request button:hover {
+            background: darkred;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+ 
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+            header p {
+                font-size: 1.2em;
+            }
+            .section h2 {
+                font-size: 1.8em;
+            }
+            footer p {
+                font-size: 1em;
+            }
+            #car-emoji {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <iframe class="bg-video" src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=cr2kkxEdZHo&controls=0&showinfo=0&modestbranding=1&playsinline=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <header>
+        <div class="container">
+            <h1>Vijay's 4 Wheel Beast</h1>
+            <p>Your Trusted Car Workshop</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Oil Changes</li>
+                <li>Brake Repairs</li>
+                <li>Engine Diagnostics</li>
+                <li>Tire Replacements</li>
+                <li>Transmission Services</li>
+            </ul>
+        </section>
+
+        <section class="section modifications">
+            <h2>Modification Services</h2>
+            <ul>
+                <li><strong>Spoilers:</strong> Spoilers make a car look awesome.</li>
+                <li><strong>Window Tint:</strong> Window tint has come a long way since merely darkening windows.</li>
+                <li><strong>Special Paint:</strong> Do you love orange and red flames along the sides?</li>
+                <li><strong>Turbochargers and Superchargers:</strong> Enhance your car’s power and performance.</li>
+                <li><strong>Sport Seats:</strong> Upgrade to sport seats for a more dynamic driving experience.</li>
+                <li><strong>Tires:</strong> Custom tires to match your vehicle’s style and performance needs.</li>
+                <li><strong>Suspensions and Shocks:</strong> Improve handling and ride quality with upgraded suspensions and shocks.</li>
+            </ul>
+        </section>
+
+        <section class="section contact">
+            <h2>Contact Us</h2>
+            <p>Address: 1234 Car Lane, Auto City, AC 56789</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@vijays4wheelbeast.com</p>
+        </section>
+
+        <!-- New Service Request Section -->
+        <section class="service-request">
+            <h2>Submit Your Service Request</h2>
+            <form action="/submit_request" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <label for="message">Service Request:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vijay's 4 Wheel Beast. All rights reserved.</p>
+    </footer>
+</body>
+</html>
